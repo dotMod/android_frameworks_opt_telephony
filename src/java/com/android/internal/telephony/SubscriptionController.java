@@ -2277,7 +2277,7 @@ public class SubscriptionController extends ISub.Stub {
         mUiccAppsEnableChangeRegList.remove(handler);
     }
 
-    private void notifyUiccAppsEnableChanged() {
+    protected void notifyUiccAppsEnableChanged() {
         mUiccAppsEnableChangeRegList.notifyRegistrants();
     }
 
